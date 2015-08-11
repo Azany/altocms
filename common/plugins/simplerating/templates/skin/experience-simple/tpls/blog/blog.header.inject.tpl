@@ -18,11 +18,11 @@
     {/if}
     <div class="user-rating vote js-vote {$sClasses}"  data-target-type="blog" data-target-id="{$oBlog->getId()}">
         {if C::Get('plugin.simplerating.blog.dislike')}
-        <a href="#" class="{$sVoteClass} vote-down link link-gray link-clear js-vote-down"><i class="fa fa-thumbs-o-down"></i></a>
+            <a href="#" class="{$sVoteClass} vote-up link link link-gray link-clear js-vote-up"><i class="fa fa-chevron-up"></i></a>
         {/if}
-                            <span class="vote-total {$sClasses} js-vote-rating" title="{$aLang.blog_vote_count}: {$oBlog->getCountVote()}">
+        <span class="vote-total {$sClasses} js-vote-rating" title="{$aLang.blog_vote_count}: {$oBlog->getCountVote()}">
                                 {if $oBlog->getRating() > 0}+{/if}{$oBlog->getRating()}
                             </span>
-        <a href="#" class="{$sVoteClass} vote-up link link link-gray link-clear js-vote-up"><i class="fa fa-thumbs-o-up"></i></a>
+        <a href="#" class="{$sVoteClass} vote-down link link-gray link-clear js-vote-down"><i class="fa fa-chevron-down"></i></a>
     </div>
 </div>
