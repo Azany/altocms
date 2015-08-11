@@ -20,7 +20,7 @@
 return array(
     'menu_homepage'                             => 'Главная',
     'menu_community'                            => 'Сообщество',
-    'menu_people'                               => 'Люди',
+    'menu_people'                               => 'Брони',
     'menu_download'                             => 'Скачать',
 
     'noscript_message'                          => 'В Вашем браузере отключен javascript, поэтому сайт будет работать некорректно (если вообще будет)',
@@ -56,17 +56,17 @@ return array(
     'blogtypes_type_personal_title'             => 'Блог им. %%login%%',
     'blogtypes_type_personal_description'       => 'Это ваш персональный блог.',
     'blogtypes_type_open_name'                  => 'Открытый',
-    'blogtypes_type_open_description'           => 'Открытый — на этот блог может подписаться любой желающий, статьи видны всем',
+    'blogtypes_type_open_description'           => 'Открытый — на этот блог может подписаться любой желающий, посты видны всем',
     'blogtypes_type_close_name'                 => 'Закрытый',
-    'blogtypes_type_close_description'          => 'Закрытый — подписаться можно только по приглашению администрации блога, статьи видят только подписчики',
+    'blogtypes_type_close_description'          => 'Закрытый — подписаться можно только по приглашению администрации блога, посты видят только подписчики',
     'blogtypes_type_hidden_name'                => 'Тайный',
-    'blogtypes_type_hidden_description'         => 'Тайный — подписаться можно только по приглашению администрации блога, статьи и любую информацию о блоге видят только подписчики',
+    'blogtypes_type_hidden_description'         => 'Тайный — подписаться можно только по приглашению администрации блога, посты и любую информацию о блоге видят только подписчики',
 
     /***
      * Склонения
      */
     'reader_declension'                         => 'читатель;читателя;читателей',
-    'topic_declension'                          => 'статья;статьи;статей',
+    'topic_declension'                          => 'пост;посты;постов',
     'draft_declension'                          => 'черновик;черновика;черновиков',
 
     /***
@@ -172,8 +172,8 @@ return array(
     'blog_create_type'                          => 'Тип блога',
     'blog_create_type_open'                     => 'Открытый',
     'blog_create_type_close'                    => 'Закрытый',
-    'blog_create_type_open_notice'              => 'Открытый — на этот блог может подписаться любой желающий, статьи видны всем',
-    'blog_create_type_close_notice'             => 'Закрытый — подписаться можно только по приглашению администрации блога, статьи видят только подписчики',
+    'blog_create_type_open_notice'              => 'Открытый — на этот блог может подписаться любой желающий, посты видны всем',
+    'blog_create_type_close_notice'             => 'Закрытый — подписаться можно только по приглашению администрации блога, посты видят только подписчики',
     'blog_create_type_error'                    => 'Неизвестный тип блога',
     'blog_create_rating'                        => 'Ограничение по рейтингу',
     'blog_create_rating_notice'                 => 'Рейтинг, который необходим пользователю, чтобы написать в этот блог',
@@ -204,12 +204,12 @@ return array(
     'blog_admin_users_bun_for_comment'          => 'не комментирует',
     'blog_admin_delete_title'                   => 'Удаление блога',
     'blog_admin_delete_confirm'                 => 'Вы уверены, что хотите удалить блог?',
-    'blog_admin_delete_move'                    => 'Удалить статьи или переместить в другой блог',
-    'blog_delete_clear'                         => 'Удалить статьи',
+    'blog_admin_delete_move'                    => 'Удалить посты или переместить в другой блог',
+    'blog_delete_clear'                         => 'Удалить посты',
     'blog_admin_delete_success'                 => 'Блог успешно удален',
     'blog_admin_delete_not_empty'               => 'Вы не можете удалить блог с записями. Предварительно удалите из блога все записи.',
-    'blog_admin_delete_move_error'              => 'Не удалось переместить статьи из удаляемого блога',
-    'blog_admin_delete_move_personal'           => 'Нельзя перемещать статьи в персональный блог',
+    'blog_admin_delete_move_error'              => 'Не удалось переместить посты из удаляемого блога',
+    'blog_admin_delete_move_personal'           => 'Нельзя перемещать посты в персональный блог',
 
     'blog_admin_user_add_label'                 => 'Добавьте пользователей, которых Вы хотите пригласить',
     'blog_admin_user_invited'                   => 'Список приглашенных',
@@ -233,17 +233,17 @@ return array(
     'blog_user_invite_remove'                   => 'удалить',
 
     /***
-     * Топики/Статьи
+     * Топики/посты
      */
-    'topic_title'                               => 'Статьи',
+    'topic_title'                               => 'Посты',
     'topic_read_more'                           => 'Читать дальше',
-    'topic_author'                              => 'Автор статьи',
+    'topic_author'                              => 'Автор поста',
     'topic_date'                                => 'дата',
     'topic_tags'                                => 'Теги',
     'topic_tags_empty'                          => 'нет',
     'topic_user'                                => 'авторский текст',
     'topic_share'                               => 'Поделиться',
-    'topic_time_limit'                          => 'Вам нельзя создавать статьи слишком часто',
+    'topic_time_limit'                          => 'Вам нельзя создавать посты слишком часто',
     'topic_comment_read'                        => 'читать комментарии',
     'topic_comment_add'                         => 'Оставить комментарий',
     'topic_comment_add_title'                   => 'написать комментарий',
@@ -252,19 +252,19 @@ return array(
     'topic_comment_acl'                         => 'Ваш рейтинг слишком мал для написания комментариев',
     'topic_comment_banned'                      => 'Извините, вы забанены и не можете оставлять комментарии',
     'topic_comment_limit'                       => 'Вам нельзя писать комментарии слишком часто',
-    'topic_comment_notallow'                    => 'Автор статьи запретил добавлять комментарии',
+    'topic_comment_notallow'                    => 'Автор поста запретил добавлять комментарии',
     'topic_comment_spam'                        => 'Стоп! Спам!',
-    'topic_unpublish'                           => 'статья находится в черновиках',
+    'topic_unpublish'                           => 'Пост находится в черновиках',
     'topic_favourite_add'                       => 'добавить в избранное',
-    'topic_favourite_add_ok'                    => 'Статья добавлена в избранное',
-    'topic_favourite_add_no'                    => 'Этой статьи нет в вашем избранном',
-    'topic_favourite_add_already'               => 'Эта статья уже есть в вашем избранном',
+    'topic_favourite_add_ok'                    => 'Пост добавлен в избранное',
+    'topic_favourite_add_no'                    => 'Этого поста нет в вашем избранном',
+    'topic_favourite_add_already'               => 'Этот пост уже есть в вашем избранном',
     'topic_favourite_del'                       => 'удалить из избранного',
-    'topic_favourite_del_ok'                    => 'Статья удалена из избранного',
+    'topic_favourite_del_ok'                    => 'Пост удален из избранного',
     'topic_favourite_tags_block'                => 'Теги избранного',
     'topic_favourite_tags_block_all'            => 'Все теги',
     'topic_favourite_tags_block_user'           => 'Мои теги',
-    'error_favorite_topic_is_draft'             => 'Статью из черновиков нельзя добавить в избранное',
+    'error_favorite_topic_is_draft'             => 'Пост из черновиков нельзя добавить в избранное',
     'comments_all'                              => 'Прямой эфир',
     'add_favourite_tags'                        => 'Добавить свои теги',
     'topic_toggle_images'                       => 'Добавить изображения',
@@ -275,12 +275,12 @@ return array(
     'topic_created_personal'                    => 'В личном блоге',
     'topic_draft_link'                          => 'Прямая ссылка на черновик',
     'topic_add'                                 => 'Создать',
-    'topic_add_title'                           => 'Добавьте свою статью!',
+    'topic_add_title'                           => 'Добавьте свой пост!',
 
     /***
-     * Меню топиков
+     * Меню постов
      */
-    'topic_menu_add'                            => 'Статья',
+    'topic_menu_add'                            => 'Пост',
     'topic_menu_add_topic'                      => 'Текстовый',
     'topic_menu_add_question'                   => 'Опрос',
     'topic_menu_add_link'                       => 'Ссылка',
@@ -290,62 +290,62 @@ return array(
     'topic_menu_published'                      => 'Опубликованные',
 
     /***
-     * Создание топика
+     * Создание поста
      */
     'topic_topic_create'                        => 'Добавить',
     'topic_topic_edit'                          => 'Редактирование',
     'topic_create'                              => 'Написать',
     'topic_create_blog'                         => 'В какой блог публикуем?',
     'topic_create_blog_personal'                => 'мой персональный блог',
-    'topic_create_blog_error_unknown'           => 'Пытаетесь разместить статью в неизвестный блог?',
-    'topic_create_blog_error_nojoin'            => 'Вы не подписаны на этот блоге!',
+    'topic_create_blog_error_unknown'           => 'Пытаетесь разместить пост в неизвестный блог?',
+    'topic_create_blog_error_nojoin'            => 'Вы не подписаны на этот блог!',
     'topic_create_blog_error_noacl'             => 'Вы еще недостаточно окрепли, чтобы постить в этот блог',
     'topic_create_blog_error_noallow'           => 'Вы не можете писать в этот блог',
     'topic_create_blog_notice'                  => 'Выберите блог, в который будете писать',
     'topic_create_blog_type_not_in_any_blog'    => 'Ни у одного типа блогов не разрешен этот тип контента.',
     'topic_create_title'                        => 'Заголовок',
-    'topic_create_title_notice'                 => 'Заголовок должен быть наполнен смыслом, чтобы можно было понять, о чем будет статья.',
-    'topic_create_title_error'                  => 'Название статьи должно быть от 2 до 200 символов',
-    'topic_create_url'                          => 'Ссылка на статью',
-    'topic_create_url_edit'                     => 'Редактировать ссылку на статью',
-    'topic_create_url_short'                    => 'Получить короткую ссылку на статью',
+    'topic_create_title_notice'                 => 'Заголовок должен быть наполнен смыслом, чтобы можно было понять, о чем будет пост.',
+    'topic_create_title_error'                  => 'Название посты должно быть от 2 до 200 символов',
+    'topic_create_url'                          => 'Ссылка на пост',
+    'topic_create_url_edit'                     => 'Редактировать ссылку на пост',
+    'topic_create_url_short'                    => 'Получить короткую ссылку на пост',
     'topic_create_question_title'               => 'Опрос',
     'topic_create_question_title_notice'        => 'Текст вопроса',
     'topic_create_question_title_error'         => 'Вопрос должен быть от 2 до 200 символов',
     'topic_create_text'                         => 'Текст',
     'topic_create_text_notice'                  => 'Доступны html-теги',
-    'topic_create_text_error'                   => 'Текст статьи должен быть от 2 до 15000 символов',
-    'topic_create_text_error_unique'            => 'Вы уже писали статью с таким содержанием',
-    'topic_create_type_error'                   => 'Неверный тип статьи',
+    'topic_create_text_error'                   => 'Текст посты должен быть от 2 до 15000 символов',
+    'topic_create_text_error_unique'            => 'Вы уже писали пост с таким содержанием',
+    'topic_create_type_error'                   => 'Неверный тип посты',
     'topic_create_tags'                         => 'Теги',
-    'topic_create_tags_notice'                  => 'Теги нужно разделять запятой. Например: google, вконтакте, кирпич',
+    'topic_create_tags_notice'                  => 'Теги нужно разделять запятой. Например: пони, новости, Селестия',
     'topic_create_tags_error_bad'               => 'Проверьте правильность меток',
-    'topic_create_tags_error'                   => 'Метки статьи должны быть от 2 до 50 символов с общей длиной не более 500 символов',
+    'topic_create_tags_error'                   => 'Метки поста должны быть от 2 до 50 символов с общей длиной не более 500 символов',
     'topic_create_forbid_comment'               => 'Запретить комментировать',
-    'topic_create_forbid_comment_notice'        => 'Если отметить эту галку, то нельзя будет оставлять комментарии к статье',
+    'topic_create_forbid_comment_notice'        => 'Если отметить эту галку, то нельзя будет оставлять комментарии к посту',
     'topic_create_publish_index'                => 'Принудительно вывести на главную',
     'topic_create_publish_index_notice'         => 'Если отметить эту галку, то статья сразу попадёт на главную страницу (опция доступна только администраторам)',
     'topic_create_submit_publish'               => 'Опубликовать',
-    'topic_create_submit_publish_update'        => 'Обновить публикацию',
+    'topic_create_submit_publish_update'        => 'Обновить пост',
     'topic_create_submit_publish_draft'         => 'Перенести в черновики',
     'topic_create_submit_update'                => 'Обновить',
     'topic_create_submit_draft'                 => 'Сохранить в черновиках',
     'topic_create_submit_save'                  => 'Сохранить в черновиках',
     'topic_create_submit_preview'               => 'Предпросмотр',
     'topic_create_submit_preview_close'         => 'свернуть',
-    'topic_create_submit_notice'                => 'Если нажать кнопку «Сохранить в черновиках», текст статьи будет виден только Вам, а рядом с его заголовком будет отображаться замочек. Чтобы статья была видна всем, нажмите «Опубликовать».',
-    'topic_create_notice'                       => 'Не забывайте: тег <cut> сокращает длинные записи, скрывая их целиком или частично под ссылкой («читать дальше»). Скрытая часть не видна в блоге, но доступна в полной записи на странице статьи.',
-    'topic_create_error'                        => 'Возникли технические неполадки при добавлении статьи. Пожалуйста, повторите позже.',
+    'topic_create_submit_notice'                => 'Если нажать кнопку «Сохранить в черновиках», текст поста будет виден только Вам, а рядом с его заголовком будет отображаться замочек. Чтобы пост была видна всем, нажмите «Опубликовать».',
+    'topic_create_notice'                       => 'Не забывайте: тег <cut> сокращает длинные записи, скрывая их целиком или частично под ссылкой («читать дальше»). Скрытая часть не видна в блоге, но доступна в полной записи на странице поста.',
+    'topic_create_error'                        => 'Возникли технические неполадки при добавлении поста. Пожалуйста, повторите позже.',
     'topic_edit'                                => 'Редактировать',
     'topic_preview'                             => 'Предпросмотр',
     'topic_delete'                              => 'Удалить',
-    'topic_delete_confirm_title'                => 'Удаление статьи',
-    'topic_delete_confirm_text'                 => 'Вы действительно хотите удалить статью %%title%%?',
-    'topic_delete_confirm'                      => 'Вы действительно хотите удалить статью?',
+    'topic_delete_confirm_title'                => 'Удаление поста',
+    'topic_delete_confirm_text'                 => 'Вы действительно хотите удалить пост %%title%%?',
+    'topic_delete_confirm'                      => 'Вы действительно хотите удалить пост?',
 
     'topic_field_link_add'                      => 'Добавить ссылку-источник',
     'topic_field_link_label'                    => 'Cсылка-источник',
-    'topic_field_link_notice'                   => 'Например, http://altocms.com/218.html',
+    'topic_field_link_notice'                   => 'Например, http://lurkmore.to/My_Little_Pony/Популярные_фанфики',
     'topic_field_link_error'                    => 'Ссылка должна быть от 2 до 200 символов',
 
     'topic_field_photoset_add'                  => 'Добавить изображения',
@@ -357,27 +357,27 @@ return array(
     'topic_field_file_upload_err_type'          => 'Файл не загружен - недопустимый тип файла. Допустимые типы: %%types%%',
 
     'topic_show_photoset'                       => 'Отображать фотосет',
-    'topic_show_photoset_notice'                => 'Если отметить эту галку, то фотосет будет полностью отображён после текста топика',
+    'topic_show_photoset_notice'                => 'Если отметить эту галку, то фотосет будет полностью отображён после текста поста',
 
     /***
-     * Топик-ссылка
+     * Пост-ссылка
      */
-    'topic_link'                                => 'топик-ссылка',
+    'topic_link'                                => 'пост-ссылка',
     'topic_link_title'                          => 'Ссылки',
     'topic_link_title_edit'                     => 'Редактирование ссылки',
     'topic_link_title_create'                   => 'Добавление ссылки',
-    'topic_link_create'                         => 'Создание топика-ссылки',
-    'topic_link_edit'                           => 'Редактирование топика-ссылки',
+    'topic_link_create'                         => 'Создание поста-ссылки',
+    'topic_link_edit'                           => 'Редактирование поста-ссылки',
     'topic_link_count_jump'                     => 'переходов',
     'topic_link_create_url'                     => 'Источник',
-    'topic_link_create_url_notice'              => 'Например, http://altocms.com/218.html',
+    'topic_link_create_url_notice'              => 'Например, http://lurkmore.to/My_Little_Pony/Популярные_фанфики',
     'topic_link_create_url_error'               => 'Ссылка должна быть от 2 до 200 символов',
     'topic_link_create_text'                    => 'Краткое описание (максимум 500 символов)',
     'topic_link_create_text_notice'             => 'HTML-теги запрещены',
     'topic_link_create_text_error'              => 'Описание ссылки должно быть от 10 до 500 символов',
 
     /***
-     * Топик-опрос
+     * Пост-опрос
      */
     'topic_question_title'                      => 'Опросы',
     'topic_question_title_edit'                 => 'Редактирование опроса',
@@ -389,8 +389,8 @@ return array(
     'topic_question_vote_result_sort'           => 'Включить\выключить сортировку',
     'topic_question_abstain'                    => 'воздержаться',
     'topic_question_abstain_result'             => 'Воздержалось',
-    'topic_question_create'                     => 'Создание топика-опроса',
-    'topic_question_edit'                       => 'Редактирование топика-опроса',
+    'topic_question_create'                     => 'Создание поста-опроса',
+    'topic_question_edit'                       => 'Редактирование поста-опроса',
     'topic_question_create_title'               => 'Вопрос',
     'topic_question_create_title_notice'        => 'Вопрос должен быть наполнен смыслом, чтобы можно было понять, о чем будет опрос.',
     'topic_question_create_title_error'         => 'Вопрос должен быть от 2 до 200 символов',
@@ -406,20 +406,20 @@ return array(
     'topic_question_create_text_error'          => 'Описание опроса должно быть не более 500 символов',
 
     /***
-     * Голосование за топик
+     * Голосование за пост
      */
     'topic_vote_up'                             => 'нравится',
     'topic_vote_down'                           => 'не нравится',
-    'topic_vote_error_already'                  => 'Вы уже голосовали за эту статью!',
-    'topic_vote_error_self'                     => 'Вы не можете голосовать за свою статью!',
+    'topic_vote_error_already'                  => 'Вы уже голосовали за эту пост!',
+    'topic_vote_error_self'                     => 'Вы не можете голосовать за свой пост!',
     'topic_vote_error_guest'                    => 'для голосования необходимо авторизоваться',
-    'topic_vote_error_time'                     => 'Срок голосования за статью истёк!',
+    'topic_vote_error_time'                     => 'Срок голосования за пост истёк!',
     'topic_vote_error_acl'                      => 'У вас не хватает рейтинга и силы для голосования!',
     'topic_vote_error_banned'                   => 'Извините, вы забанены и не можете голосовать',
     'topic_vote_error_is_not_published'         => 'Нельзя голосовать за черновик',
     'topic_vote_no'                             => 'пока никто не голосовал',
     'topic_vote_ok'                             => 'Ваш голос учтен',
-    'topic_vote_ok_abstain'                     => 'Вы воздержались для просмотра рейтинга статьи',
+    'topic_vote_ok_abstain'                     => 'Вы воздержались для просмотра рейтинга поста',
     'topic_vote_count'                          => 'всего проголосовало',
 
     /***
@@ -433,14 +433,14 @@ return array(
     'topic_photoset_upload_close'               => 'Закрыть',
     'topic_photoset_upload_rules'               => 'Доступна загрузка изображений в формат JPG, PNG, GIF<br />Размер изображений не должен превышать %%SIZE%% Kб<br />Максимальное число загружаемых изображений: %%COUNT%%',
     'topic_photoset_choose_image'               => 'Выберите изображение для загрузки',
-    'topic_photoset_is_preview'                 => 'Отмечено как превью к статье',
-    'topic_photoset_mark_is_not_preview'        => 'Это изображение больше не превью к статье',
+    'topic_photoset_is_preview'                 => 'Отмечено как превью к посту',
+    'topic_photoset_mark_is_not_preview'        => 'Это изображение больше не превью к посту',
     'topic_photoset_description_done'           => 'Обновлено описание',
     'topic_photoset_mark_as_preview'            => 'Отметить как превью',
     'topic_photoset_show_all'                   => 'Показать все %%COUNT%% фото',
     'topic_photoset_count_images'               => 'изображение;изображения;изображений',
     'topic_photoset_show_more'                  => 'Показать ещё фото',
-    'topic_photoset_error_count_photos'         => 'В статье может быть от %%MIN%% до %%MAX%% фото',
+    'topic_photoset_error_count_photos'         => 'В посте может быть от %%MIN%% до %%MAX%% фото',
     'topic_photoset_error_size'                 => 'У изображения слишком большое разрешение',
     'topic_photoset_title'                      => 'Фотосет',
     'topic_photoset_photo_deleted'              => 'Фото удалено',
@@ -509,9 +509,9 @@ return array(
     'comment_favourite_del_ok'                  => 'Комментарий удален из избранного',
 
     /***
-     * Люди
+     * Брони
      */
-    'people'                                    => 'Люди',
+    'people'                                    => 'Брони',
 
     /***
      * Пользователь
@@ -570,12 +570,12 @@ return array(
     'user_date_registration'                    => 'Дата регистрации',
     'user_empty'                                => 'нет таких',
     'user_stats'                                => 'Статистика',
-    'user_stats_all'                            => 'Всего пользователей',
+    'user_stats_all'                            => 'Всего брони',
     'user_stats_active'                         => 'Активные',
-    'user_stats_noactive'                       => 'Заблудившиеся',
-    'user_stats_sex_man'                        => 'Мужчины',
-    'user_stats_sex_woman'                      => 'Женщины',
-    'user_stats_sex_other'                      => 'Пол не указан',
+    'user_stats_noactive'                       => 'Ушли в Эквестрию',
+    'user_stats_sex_man'                        => 'Жеребцы',
+    'user_stats_sex_woman'                      => 'Кобылки',
+    'user_stats_sex_other'                      => 'Чейнджлинги',
     'user_not_found'                            => 'Пользователь <b>%%login%%</b> не найден',
     'user_not_found_by_id'                      => 'Пользователь <b>#%%id%%</b> не найден',
     'user_search_title_hint'                    => 'Поиск по логину',
@@ -660,7 +660,7 @@ return array(
     'user_menu_profile_stream'                  => 'Активность',
     'user_menu_profile_notes'                   => 'Заметки',
     'user_menu_profile_favourites'              => 'Избранное',
-    'user_menu_profile_favourites_topics'       => 'Избранные статьи',
+    'user_menu_profile_favourites_topics'       => 'Избранные посты',
     'user_menu_profile_favourites_comments'     => 'Избранные комментарии',
     'user_menu_profile_tags'                    => 'Метки',
     'user_menu_publication'                     => 'Публикации',
@@ -817,8 +817,8 @@ return array(
     'settings_invite_submit_ok'                 => 'Приглашение отправлено',
     'settings_tuning'                           => 'Настройки сайта',
     'settings_tuning_notice'                    => 'Уведомления на e-mail',
-    'settings_tuning_notice_new_topic'          => 'при новой статье в блоге',
-    'settings_tuning_notice_new_comment'        => 'при новом комментарии в статье',
+    'settings_tuning_notice_new_topic'          => 'при новой посту в блоге',
+    'settings_tuning_notice_new_comment'        => 'при новом комментарии в посту',
     'settings_tuning_notice_new_talk'           => 'при новом личном сообщении',
     'settings_tuning_notice_reply_comment'      => 'при ответе на комментарий',
     'settings_tuning_notice_new_friend'         => 'при добавлении вас в друзья',
@@ -904,7 +904,7 @@ return array(
     'widget_country_tags'                       => 'Страны',
     'widget_blog_info'                          => 'Описание блога',
     'widget_blog_info_note'                     => 'Совет',
-    'widget_blog_info_note_text'                => '<strong>Тег &lt;cut&gt; сокращает длинные записи</strong>, скрывая их целиком или частично под ссылкой («читать дальше»). Скрытая часть не видна в блоге, но доступна в полной записи на странице статьи.',
+    'widget_blog_info_note_text'                => '<strong>Тег &lt;cut&gt; сокращает длинные записи</strong>, скрывая их целиком или частично под ссылкой («читать дальше»). Скрытая часть не видна в блоге, но доступна в полной записи на странице посты.',
 
     'widget_stream'                             => 'Прямой эфир',
     'widget_stream_topics'                      => 'Публикации',
@@ -934,7 +934,7 @@ return array(
     'block_country_tags'                        => 'Страны',
     'block_blog_info'                           => 'Описание блога',
     'block_blog_info_note'                      => 'Совет',
-    'block_blog_info_note_text'                 => '<strong>Тег &lt;cut&gt; сокращает длинные записи</strong>, скрывая их целиком или частично под ссылкой («читать дальше»). Скрытая часть не видна в блоге, но доступна в полной записи на странице статьи.',
+    'block_blog_info_note_text'                 => '<strong>Тег &lt;cut&gt; сокращает длинные записи</strong>, скрывая их целиком или частично под ссылкой («читать дальше»). Скрытая часть не видна в блоге, но доступна в полной записи на странице посты.',
 
     'block_blogs'                               => 'Блоги',
     'block_blogs_top'                           => 'Топ',
@@ -946,7 +946,7 @@ return array(
 
     'block_stream'                              => 'Прямой эфир',
     'block_stream_topics'                       => 'Публикации',
-    'block_stream_topics_no'                    => 'Нет статей.',
+    'block_stream_topics_no'                    => 'Нет постов.',
     'block_stream_comments'                     => 'Комментарии',
     'block_stream_comments_no'                  => 'Нет комментариев.',
     'block_stream_comments_all'                 => 'Весь эфир',
@@ -964,10 +964,10 @@ return array(
     'search_submit'                             => 'Найти',
     'search_results'                            => 'Результаты поиска',
     'search_results_empty'                      => 'Удивительно, но поиск не дал результатов',
-    'search_results_count_topics'               => 'статей',
+    'search_results_count_topics'               => 'постов',
     'search_results_count_comments'             => 'комментариев',
 
-    'search_found_topics'                       => 'Статьи',
+    'search_found_topics'                       => 'Посты',
     'search_found_comments'                     => 'Комментарии',
     'search_found_blogs'                        => 'Блоги',
 
@@ -1028,7 +1028,7 @@ return array(
     'talk_filter_notice_sender'                 => 'Укажите логин отправителя',
     'talk_filter_notice_addressee'              => 'Укажите логин адресата',
     'talk_filter_notice_keyword'                => 'Введите одно или несколько слов',
-    'talk_filter_notice_date'                   => 'Дата вводится в формате 25.12.2008',
+    'talk_filter_notice_date'                   => 'Дата вводится в формате 25.05.2015',
     'talk_filter_submit'                        => 'Отфильтровать',
     'talk_filter_submit_clear'                  => 'Очистить',
     'talk_filter_error'                         => 'Ошибка фильтрации',
@@ -1062,17 +1062,17 @@ return array(
      */
     'userfeed_block_blogs_title'                => 'Блоги',
     'userfeed_widget_blogs_title'               => 'Блоги',
-    'userfeed_block_users_title'                => 'Люди',
+    'userfeed_block_users_title'                => 'Брони',
     'userfeed_block_users_append'               => 'Добавить',
     'userfeed_block_users_friends'              => 'Друзья',
-    'userfeed_subscribes_already_subscribed'    => 'Вы уже подписаны на статьи этого пользователя',
+    'userfeed_subscribes_already_subscribed'    => 'Вы уже подписаны на посты этого пользователя',
     'userfeed_subscribes_updated'               => 'Настройки ленты сохранены',
-    'userfeed_get_more'                         => 'Получить ещё статьи',
+    'userfeed_get_more'                         => 'Получить ещё посты',
     'userfeed_title'                            => 'Лента',
     'userfeed_settings_note_follow_blogs'       => 'Выберите блоги которые вы хотели бы читать',
-    'userfeed_settings_note_follow_user'        => 'Добавьте людей, статьи которых вы хотели бы читать',
-    'userfeed_settings_note_follow_friend'      => 'Выберите друзей, статьи которых вы хотели бы читать',
-    'userfeed_no_subscribed_users'              => 'Вы ещё не подписались на пользователей, чьи статьи хотите видеть',
+    'userfeed_settings_note_follow_user'        => 'Добавьте людей, посты которых вы хотели бы читать',
+    'userfeed_settings_note_follow_friend'      => 'Выберите друзей, посты которых вы хотели бы читать',
+    'userfeed_no_subscribed_users'              => 'Вы ещё не подписались на пользователей, чьи посты хотите видеть',
     'userfeed_no_blogs'                         => 'Вы не подписаны ни на один блог',
     'userfeed_error_subscribe_to_yourself'      => 'Вы не можете подписаться на себя',
 
@@ -1080,17 +1080,17 @@ return array(
      * Stream
      */
     'stream_block_config_title'                 => 'Настройка событий',
-    'stream_block_users_title'                  => 'Люди',
+    'stream_block_users_title'                  => 'Брони',
     'stream_block_config_append'                => 'Добавить',
     'stream_block_users_friends'                => 'Друзья',
     'stream_subscribes_already_subscribed'      => 'Вы уже подписаны на этого пользователя',
     'stream_subscribes_updated'                 => 'Настройки ленты сохранены',
     'stream_get_more'                           => 'Получить ещё события',
     'stream_event_type_add_wall'                => 'Добавление записи на стену',
-    'stream_event_type_add_topic'               => 'Добавление статьи',
+    'stream_event_type_add_topic'               => 'Добавление поста',
     'stream_event_type_add_comment'             => 'Добавление комментария',
     'stream_event_type_add_blog'                => 'Добавление блога',
-    'stream_event_type_vote_topic'              => 'Голосование за статью',
+    'stream_event_type_vote_topic'              => 'Голосование за пост',
     'stream_event_type_vote_comment'            => 'Голосование за комментарий',
     'stream_event_type_vote_blog'               => 'Голосование за блог',
     'stream_event_type_vote_user'               => 'Голосование за пользователя',
@@ -1101,24 +1101,24 @@ return array(
     'stream_error_subscribe_to_yourself'        => 'Вы не можете подписаться на себя',
     'stream_list_user'                          => 'Пользователь',
     'stream_list_event_add_wall'                => 'добавил запись на стену',
-    'stream_list_event_add_topic'               => 'добавил новую статью',
+    'stream_list_event_add_topic'               => 'добавил новую пост',
     'stream_list_event_add_blog'                => 'добавил новый блог',
-    'stream_list_event_add_comment'             => 'прокомментировал статью',
-    'stream_list_event_vote_topic'              => 'оценил статью',
+    'stream_list_event_add_comment'             => 'прокомментировал пост',
+    'stream_list_event_vote_topic'              => 'оценил пост',
     'stream_list_event_vote_blog'               => 'оценил блог',
     'stream_list_event_vote_user'               => 'оценил пользователя',
-    'stream_list_event_vote_comment'            => 'оценил комментарий к статье',
+    'stream_list_event_vote_comment'            => 'оценил комментарий к посту',
     'stream_list_event_join_blog'               => 'подписался на блог',
     'stream_list_event_add_friend'              => 'добавил в друзья пользователя',
 
     'stream_list_event_add_wall_female'         => 'добавила запись на стену',
-    'stream_list_event_add_topic_female'        => 'добавила новую статью',
+    'stream_list_event_add_topic_female'        => 'добавила новую пост',
     'stream_list_event_add_blog_female'         => 'добавила новый блог',
-    'stream_list_event_add_comment_female'      => 'прокомментировала статью',
-    'stream_list_event_vote_topic_female'       => 'оценила статью',
+    'stream_list_event_add_comment_female'      => 'прокомментировала пост',
+    'stream_list_event_vote_topic_female'       => 'оценила пост',
     'stream_list_event_vote_blog_female'        => 'оценила блог',
     'stream_list_event_vote_user_female'        => 'оценила пользователя',
-    'stream_list_event_vote_comment_female'     => 'оценила комментарий к статье',
+    'stream_list_event_vote_comment_female'     => 'оценила комментарий к посту',
     'stream_list_event_join_blog_female'        => 'подписалась в блог',
     'stream_list_event_add_friend_female'       => 'добавила в друзья пользователя',
 
@@ -1133,8 +1133,8 @@ return array(
      * Рейтинг TOP
      */
     'top'                                       => 'Рейтинг',
-    'top_blogs'                                 => 'TOP Блогов',
-    'top_topics'                                => 'TOP статей',
+    'top_blogs'                                 => 'TOP блогов',
+    'top_topics'                                => 'TOP постов',
     'top_comments'                              => 'TOP комментариев',
 
     /***
@@ -1201,24 +1201,24 @@ return array(
     'aim_target_type_profile_photo'          => 'Фото',
     'aim_target_type_profile_avatar'         => 'Аватар',
     'aim_target_type_tmp'                    => 'Временные',
-    'aim_target_type_current'                => 'Этот топик',
-    'aim_target_type_topics'                 => 'Статьи',
+    'aim_target_type_current'                => 'Этот пост',
+    'aim_target_type_topics'                 => 'посты',
     'aim_target_type_talks'                  => 'Письма',
     'aim_target_type_comments'               => 'Комментарии',
     'menu_image_insert_description'          => 'Меню добавления изображения',
 
-    'target_type_topic'                      => 'Статьи',
+    'target_type_topic'                      => 'посты',
     'target_type_talk'                       => 'Переписка',
-    'target_type_topic_comment'              => 'Комментарии топиков',
+    'target_type_topic_comment'              => 'Комментарии постов',
     'target_type_talk_comment'               => 'Комментарии переписки',
     'target_type_single-image-uploader'      => 'Поле контента',
     'target_type_all'                        => 'Все',
-    'target_type_photoset' => 'Фотосет топика',
+    'target_type_photoset' => 'Фотосет поста',
 
     /***
      * Уведомления
      */
-    'notify_subject_comment_new'                => 'Новый комментарий к статье',
+    'notify_subject_comment_new'                => 'Новый комментарий к посту',
     'notify_subject_comment_reply'              => 'Вам ответили на ваш комментарий',
     'notify_subject_topic_new'                  => 'Новая статья в блоге',
     'notify_subject_registration_activate'      => 'Регистрация',
@@ -1277,8 +1277,8 @@ return array(
      * Toolbar
      */
     'toolbar_scrollup_go'                       => 'Вверх',
-    'toolbar_topic_next'                        => 'Следующая статья',
-    'toolbar_topic_prev'                        => 'Предыдущая статья',
+    'toolbar_topic_next'                        => 'Следующий пост',
+    'toolbar_topic_prev'                        => 'Предыдущий пост',
 
     /***
      * География
@@ -1302,7 +1302,7 @@ return array(
     'infobox_blog_users'                        => 'Подписчиков',
     'infobox_blog_rating'                       => 'Рейтинг',
     'infobox_blog_limit_rating'                 => 'Ограничение на постинг',
-    'infobox_blog_topic_last'                   => 'Последняя статья',
+    'infobox_blog_topic_last'                   => 'Последний пост',
     'infobox_blog_url'                          => 'Читать блог',
     'infobox_blog_rss'                          => 'Подписаться на RSS',
 
@@ -1310,7 +1310,7 @@ return array(
      * Создание
      */
     'block_create'                              => 'Создать',
-    'block_create_topic'                        => 'Статья',
+    'block_create_topic'                        => 'Пост',
     'block_create_question'                     => 'Опрос',
     'block_create_link'                         => 'Ссылка',
     'block_create_photoset'                     => 'Фотосет',
@@ -1428,7 +1428,7 @@ return array(
 
     'menu_main_description' => 'Главное меню сайта',
     'menu_main_index_description' => 'Главная страница сайта',
-    'menu_main_blogs_description' => 'Страница списков блогов',
+    'menu_main_blogs_description' => 'Страница списка блогов',
     'menu_main_people_description' => 'Страница списка пользователей сайта',
     'menu_main_stream_description' => 'Лента событий сайта',
     'menu_footer_site_menu' => 'Первая колонка меню подвала, меню сайта',
@@ -1442,7 +1442,7 @@ return array(
     'menu_user_description' => 'Меню авторизованного пользователя',
     'menu_empty_user_name' => '[[ИМЯ ПОЛЬЗОВАТЕЛЯ]]',
     'menu_user_submenu_description' => 'Подменю пользователя',
-    'menu_topics_submenu_description' => 'Меню топиков',
+    'menu_topics_submenu_description' => 'Меню постов',
     'menu_login_submenu_description' => 'Меню не авторизованного пользователя',
 
     'timezone_list'                             => array(
@@ -1505,7 +1505,7 @@ return array(
     'target_type_profile_avatar'        => 'Аватары',
     'target_type_profile_photo'         => 'Фото',
     'target_type_tmp' => 'Временные',
-    'target_type_current' => 'Этот топик',
+    'target_type_current' => 'Этот пост',
 
     'spoiler_toggle_show' => 'показать',
 
@@ -1515,7 +1515,7 @@ return array(
     'panel_photoset_align_left' => 'слева',
     'panel_photoset_align_right' => 'справа',
     'panel_photoset_align_both' => 'по центру',
-    'panel_photoset_topic' => 'Ид. топика-источника фотосета ',
+    'panel_photoset_topic' => 'Ид. поста-источника фотосета ',
 
     'panel_user_login' => 'Логин',
     'panel_spoiler_text' => 'Текст спойлера',
