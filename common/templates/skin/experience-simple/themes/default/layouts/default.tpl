@@ -1,5 +1,5 @@
- {* Тема оформления Experience v.1.0  для Alto CMS      *}
- {* @licence     CC Attribution-ShareAlike   *}
+{* Тема оформления Experience v.1.0  для Alto CMS      *}
+{* @licence     CC Attribution-ShareAlike   *}
 
 <!DOCTYPE html>
 
@@ -36,17 +36,17 @@
         <link href="{asset file="images/favicon.ico" theme=true}?v1" rel="shortcut icon"/>
         <link rel="search" type="application/opensearchdescription+xml" href="{router page='search'}opensearch/" title="{Config::Get('view.name')}"/>
 
-        {if $aHtmlRssAlternate}
-            <link rel="alternate" type="application/rss+xml" href="{$aHtmlRssAlternate.url}" title="{$aHtmlRssAlternate.title}">
-        {/if}
+    {if $aHtmlRssAlternate}
+    <link rel="alternate" type="application/rss+xml" href="{$aHtmlRssAlternate.url}" title="{$aHtmlRssAlternate.title}">
+    {/if}
 
-        {if $sHtmlCanonical}
-            <link rel="canonical" href="{$sHtmlCanonical}"/>
-        {/if}
+    {if $sHtmlCanonical}
+    <link rel="canonical" href="{$sHtmlCanonical}"/>
+    {/if}
 
-        {if $bRefreshToHome}
-            <meta HTTP-EQUIV="Refresh" CONTENT="3; URL={Config::Get('path.root.url')}/">
-        {/if}
+    {if $bRefreshToHome}
+    <meta HTTP-EQUIV="Refresh" CONTENT="3; URL={Config::Get('path.root.url')}/">
+    {/if}
 
         {hook run="html_head_tags"}
 
@@ -63,7 +63,7 @@
 
             var aRouter = [];
             {foreach from=$aRouter key=sPage item=sPath}
-                aRouter['{$sPage}'] = '{$sPath}';
+            aRouter['{$sPage}'] = '{$sPath}';
             {/foreach}
 
             {$SWF_DIR_NAME=E::ViewerAsset_AssetFileHashDir("{Config::Get('path.root.dir')}common/templates/frontend/libs/vendor/jquery.fileapi/FileAPI/")}
@@ -109,29 +109,29 @@
 
 
 <body class="{$body_classes}">
-    {block name="layout_body"}
+{block name="layout_body"}
 
-        {hook run='layout_body_begin'}
+    {hook run='layout_body_begin'}
 
-        {* Модальные окна *}
-        {if E::IsUser()}
-            {include file='modals/modal.write.tpl'}
-            {include file='modals/modal.favourite_tags.tpl'}
-        {else}
-            {include file='modals/modal.auth.tpl'}
-        {/if}
-        {include file='modals/modal.empty.tpl'}
+    {* Модальные окна *}
+    {if E::IsUser()}
+        {include file='modals/modal.write.tpl'}
+        {include file='modals/modal.favourite_tags.tpl'}
+    {else}
+        {include file='modals/modal.auth.tpl'}
+    {/if}
+    {include file='modals/modal.empty.tpl'}
 
-        {* Строим менюшки *}
-        {include file='commons/common.header_nav_pages.tpl'}
-        {include file='commons/common.header_nav.tpl'}
-        {if Config::Get('view.header.banner')}
-            {wgroup group="topbanner"}
-        {/if}
-        {*{include file='commons/common.header_nav_blogs.tpl'}*}
+    {* Строим менюшки *}
+    {include file='commons/common.header_nav_pages.tpl'}
+    {include file='commons/common.header_nav.tpl'}
+    {if Config::Get('view.header.banner')}
+        {wgroup group="topbanner"}
+    {/if}
+    {*{include file='commons/common.header_nav_blogs.tpl'}*}
 
 
-        {block name="main_container"}
+    {block name="main_container"}
         {* А вот и основной контент *}
         <div class="container content {hook run='container_class'}">
             <div class="row">
@@ -163,10 +163,11 @@
 
             </div>
         </div>
-        {/block}
+    {/block}
 
-        <!-- ПОДВАЛ -->
-        <div class="footer-container">
+    <!-- ПОДВАЛ -->
+    {*
+    <div class="footer-container">
             <div class="container">
 
                 <div class="row footer">
@@ -204,40 +205,54 @@
                             <li><a class="link link-dark link-lead link-clear" href="#"><i class="fa fa-vk"></i></a></li>
                             <li><a class="link link-dark link-lead link-clear" href="#"><i class="fa fa-skype"></i></a></li>
                         </ul>
-                        {*<img src="{asset file="images/counter.png" theme=true}" alt="counter" class="pull-right counter"/>*}
+                        <img src="{asset file="images/counter.png" theme=true}" alt="counter" class="pull-right counter"/>
                     </div>
 
                 </div>
 
             </div>
+
         </div>
+    *}
 
-        <!-- Второй подвал -->
-        <div class="footer-2-container">
-            <div class="container">
 
-                <div class="left-copyright pull-left">
-                    <img src="{asset file="images/alto-logo.png" theme=true}" alt=""/>
-                    {hook run='copyright'}
-                </div>
+    <!-- Второй подвал -->
+    <div class="footer-2-container">
+        <div class="container">
 
-                <div class="right-copyright pull-right">
-                    <span>Desight by</span>
+            <div class="left-copyright pull-left">
+                {* <img src="{asset file="images/alto-logo.png" theme=true}" alt=""/>    *}
+                <span>Все права принадлежат пони. Весь мир принадлежит пони.</span>
+                {*    {hook run='copyright'}    *}
+            </div>
+
+            <div class="right-copyright pull-right">
+                <ul class="social-icons pull-right">
+                    <a class="link link-dark link-lead link-clear" href="https://vk.com/alterpony" target="_blank"><i class="fa fa-vk"></i></a>
+                    <a class="link link-dark link-lead link-clear" href="#"><i class="fa fa-facebook-square"></i></a>
+                    <a class="link link-dark link-lead link-clear" href="#"><i class="fa fa-twitter"></i></a>
+                    <a class="link link-dark link-lead link-clear" href="https://bitbucket.org/alterpony/alterpony/issues" target="_blank"><i class="fa fa-bitbucket"></i></a>
+                    <a class="link link-dark link-lead link-clear" href="#"><i class="fa fa-envelope"></i></a>
+                </ul>
+                {*    <span>Desight by</span>
                     <a href="http://creatime.org" class="link link-blue link-lead link-clear" title="design studio creatime.org">
                         <img src="{asset file="images/creatime-logo.png" theme=true}" alt="студия дизайна creatime.org">
                     </a>
-                </div>
-
+                *}
             </div>
+
         </div>
+    </div>
 
-{include file='commons/common.toolbar.tpl'}
 
-{hook run='layout_body_end'}
+
+    {include file='commons/common.toolbar.tpl'}
+
+    {hook run='layout_body_end'}
 {/block}
-    <div class="device-xs visible-xs"></div>
-    <div class="device-sm visible-sm"></div>
-    <div class="device-md visible-md"></div>
-    <div class="device-lg visible-lg"></div>
+<div class="device-xs visible-xs"></div>
+<div class="device-sm visible-sm"></div>
+<div class="device-md visible-md"></div>
+<div class="device-lg visible-lg"></div>
 </body>
 </html>
