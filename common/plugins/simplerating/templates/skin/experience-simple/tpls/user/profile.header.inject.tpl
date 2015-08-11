@@ -1,3 +1,4 @@
+{*
 <div class="col-lg-3 user-power-container">
     <div>
         <div class="user-power-header">
@@ -8,6 +9,7 @@
         </div>
     </div>
 </div>
+*}
 <div class="col-lg-4 user-rating-container">
     <div class="user-rating-header">
         {$aLang.user_rating}
@@ -27,9 +29,9 @@
     {/if}
     <div class="user-rating vote js-vote {$sClasses}"  data-target-type="user" data-target-id="{$oUserProfile->getId()}">
         {if C::Get('plugin.simplerating.user.dislike')}
-        <a href="#" class="{$sVoteClass} vote-down js-vote-down link link-gray link-clear"><i class="fa fa-thumbs-o-down"></i></a>
+            <a href="#" class="{$sVoteClass} vote-up js-vote-up link link link-gray link-clear"><i class="fa fa-chevron-up"></i></a>
         {/if}
         <span class="vote-total js-vote-rating {$sClasses}">{if $oUserProfile->getRating() > 0}+{/if}{$oUserProfile->getRating()|number_format:{Config::Get('view.rating_length')}}</span>
-        <a href="#" class="{$sVoteClass} vote-up js-vote-up link link link-gray link-clear"><i class="fa fa-thumbs-o-up"></i></a>
+        <a href="#" class="{$sVoteClass} vote-down js-vote-down link link-gray link-clear"><i class="fa fa-chevron-down"></i></a>
     </div>
 </div>
