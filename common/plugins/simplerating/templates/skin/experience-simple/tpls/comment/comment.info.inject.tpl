@@ -15,9 +15,11 @@
     {/if}
     <li class="pull-right topic-rating end js-vote {$sVoteClass}" data-target-type="comment" data-target-id="{$oComment->getId()}">
         {if C::Get('plugin.simplerating.comment.dislike')}
-        <a href="#" class="{$sVoteClass} vote-down link link-gray link-clear js-vote-down"><i class="fa fa-thumbs-o-down"></i></a>
+            <a href="#" class="{$sVoteClass} vote-down link link-gray link-clear js-vote-down"><i class="fa fa-chevron-down"></i></a>
         {/if}
         <span class="vote-total {$sVoteClass} js-vote-rating">{if $oComment->getRating() > 0}+{/if}{$oComment->getRating()}</span>
-        <a href="#" class="{$sVoteClass} vote-up link link link-gray link-clear js-vote-up"><i class="fa fa-thumbs-o-up"></i></a>
+            <a href="#" class="{$sVoteClass} vote-up link link link-gray link-clear js-vote-up"><i class="fa fa-chevron-up"></i></a>
     </li>
+
+
 {/if}
