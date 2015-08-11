@@ -148,7 +148,7 @@
 
         <li class="topic-rating js-vote" data-target-type="topic" data-target-id="{$oTopic->getId()}">
         {if C::Get('plugin.simplerating.topic.dislike')}
-            <a href="#" onclick="return false;" class="{$sVoteClass} vote-down link link-gray link-clear js-vote-down"><i class="fa fa-thumbs-o-down"></i></a>
+            <a href="#" onclick="return false;" class="{$sVoteClass} vote-up link link link-gray link-clear js-vote-up"><i class="fa fa-chevron-up"></i></a>
         {/if}
                             <span class="vote-popover vote-total js-vote-rating {$sVoteClass} {if $oTopic->getRating() >= 0}green{else}red{/if}"
                                     {if Config::Get('view.show_rating') || $bVoteInfoShow}
@@ -183,7 +183,7 @@
                                        onclick="return ls.vote.vote({$oTopic->getId()},this,0,'topic');">...</i>
                                 {/if}
                                 </span>
-            <a href="#" onclick="return false;" class="{$sVoteClass} vote-up link link link-gray link-clear js-vote-up"><i class="fa fa-thumbs-o-up"></i></a>
+            <a href="#" onclick="return false;" class="{$sVoteClass} vote-down link link-gray link-clear js-vote-down"><i class="fa fa-chevron-down"></i></a>
         </li>
 
 {/if}
