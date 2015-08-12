@@ -2,6 +2,7 @@
     {foreach $aBlogs as $oBlog}
         <li class="js-popover-blog-{$oBlog->getId()}" data-placement="auto left">
             <a href="{$oBlog->getUrlFull()}" class="blog-name link link-dual link-lead link-clear">
+                {* убираем аватарки блогов
                 <span class="blog-line-image">
                     {$sPath = $oBlog->getAvatarPath('32x32crop')}
                     {if $sPath}
@@ -10,7 +11,7 @@
                     <i class="fa fa-folder"></i>
                     {/if}
                 </span>
-
+                *}
                 <span class="blog-line-title">{$oBlog->getTitle()|escape:'html'}</span>
                 <span class="blog-line-rating">{$oBlog->getRating()}</span>
             </a>
