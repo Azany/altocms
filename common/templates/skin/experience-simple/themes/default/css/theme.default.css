@@ -136,7 +136,7 @@ ________________________________________________________________________________
 }
 .navbar-main img.user {
   margin-right: 10px;
-  border-radius: 16px;
+  border-radius: 10px;
 }
 .navbar-main .badge-mail-counter {
   margin-left: 6px;
@@ -864,7 +864,7 @@ _________________________________________________________________*/
   display: inline-block;
 }
 .panel.widget .user-block img {
-  border-radius: 16px;
+  border-radius: 10px;
   margin-top: 0;
   margin-right: 6px;
 }
@@ -1154,7 +1154,7 @@ _________________________________________________________________*/
   color: #93a6ad !important;
 }
 .toolbar-user .toolbar-menu-user a img {
-  border-radius: 16px;
+  border-radius: 10px;
   margin-right: 6px;
 }
 .toolbar-user .toolbar-menu-user a span.badge {
@@ -1881,7 +1881,7 @@ fieldset[disabled] .btn-gray.active {
   margin-right: 10px;
 }
 .topic-info ul li.topic-user img {
-  border-radius: 16px;
+  border-radius: 10px;
   margin-right: 6px;
 }
 .topic-info ul li.topic-user a {
@@ -2009,7 +2009,7 @@ fieldset[disabled] .btn-gray.active {
   margin-right: 10px !important;
 }
 .comment-tools ul li.comment-user img {
-  border-radius: 16px;
+  border-radius: 10px;
   margin-right: 6px;
 }
 .comment-tools ul li.comment-user a {
@@ -3325,7 +3325,7 @@ div.pp_experience .pp_loaderIcon {
 [data-alto-role="popover"] + .popover .user-info-default-container > img,
 .alto-popover .user-info-default-container > img {
   position: absolute;
-  border-radius: 100px;
+  border-radius: 10px;
   top: 8px;
   left: 8px;
 }
