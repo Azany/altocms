@@ -3217,7 +3217,7 @@ div.pp_experience .pp_loaderIcon {
 [data-alto-role="popover"] + .popover .user-info-default-container > div.user-info-default-top .user-info-default-username,
 .alto-popover .user-info-default-container > div.user-info-default-top .user-info-default-username {
   margin-right: 6px;
-  width: 108px;
+  width: 120px;
   white-space: nowrap;
   overflow: hidden;
   position: relative;
