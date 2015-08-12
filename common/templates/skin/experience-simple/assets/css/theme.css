@@ -133,7 +133,7 @@ ________________________________________________________________________________
 }
 .navbar-main img.user {
   margin-right: 10px;
-  border-radius: 16px;
+  border-radius: 10px;
 }
 .navbar-main .badge-mail-counter {
   margin-left: 6px;
@@ -726,7 +726,7 @@ _________________________________________________________________*/
   display: inline-block;
 }
 .panel.widget .user-block img {
-  border-radius: 16px;
+  border-radius: 10px;
   margin-top: 0;
 }
 .panel.widget .date-block {
@@ -976,7 +976,7 @@ _________________________________________________________________*/
   color: #d25151 !important;
 }
 .toolbar-user .toolbar-menu-user a img {
-  border-radius: 16px;
+  border-radius: 10px;
   margin-right: 6px;
 }
 .toolbar-user .toolbar-menu-user a span.badge {
@@ -1601,7 +1601,7 @@ fieldset[disabled] .btn-gray.active {
   margin-right: 10px;
 }
 .topic-info ul li.topic-user img {
-  border-radius: 16px;
+  border-radius: 10px;
 }
 .topic-info ul li.topic-user a {
   color: #1c374c;
@@ -1699,7 +1699,7 @@ fieldset[disabled] .btn-gray.active {
   margin-right: 10px !important;
 }
 .comment-tools ul li.comment-user img {
-  border-radius: 16px;
+  border-radius: 10px;
 }
 .comment-tools ul li.comment-user a {
   color: #1c374c;
