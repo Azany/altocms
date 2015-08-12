@@ -180,7 +180,7 @@ class ModuleText extends Module {
          */
         $sText = preg_replace(
             '/<video>http(?:s|):\/\/(?:www\.|m.|)youtube\.com\/watch\?v=([a-zA-Z0-9_\-]+)(&.+)?<\/video>/Ui',
-            '<iframe width="' . $iWidth . '" height="' . $iHeight . '" src="http://www.youtube.com/embed/$1" ' . $sIframeAttr . '></iframe>',
+            '<iframe width="' . $iWidth . '" height="' . $iHeight . '" src="//youtube.com/embed/$1" ' . $sIframeAttr . '></iframe>',
             $sText
         );
         /**
@@ -188,7 +188,7 @@ class ModuleText extends Module {
          */
         $sText = preg_replace(
             '/<video>http(?:s|):\/\/(?:www\.|m.|)youtu\.be\/([a-zA-Z0-9_\-]+)(&.+)?<\/video>/Ui',
-            '<iframe width="' . $iWidth . '" height="' . $iHeight . '" src="http://www.youtube.com/embed/$1" ' . $sIframeAttr . '></iframe>',
+            '<iframe width="' . $iWidth . '" height="' . $iHeight . '" src="//youtube.com/embed/$1" ' . $sIframeAttr . '></iframe>',
             $sText
         );
         /**
@@ -196,7 +196,7 @@ class ModuleText extends Module {
          */
         $sText = preg_replace(
             '/<video>http(?:s|):\/\/(?:www\.|)vimeo\.com\/(\d+).*<\/video>/i',
-            '<iframe src="http://player.vimeo.com/video/$1" width="' . $iWidth . '" height="' . $iHeight . '" ' . $sIframeAttr . '></iframe>',
+            '<iframe src="//player.vimeo.com/video/$1" width="' . $iWidth . '" height="' . $iHeight . '" ' . $sIframeAttr . '></iframe>',
             $sText
         );
         /**
