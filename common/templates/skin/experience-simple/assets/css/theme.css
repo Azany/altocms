@@ -2554,7 +2554,7 @@ span.counter {
 }
 .topic-info .user-info-default-container > img {
   position: absolute;
-  border-radius: 100px;
+  border-radius: 10px;
   top: 8px;
   left: 8px;
 }
