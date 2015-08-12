@@ -5,13 +5,9 @@
             <li class="user-info-default-rss"><a href="{router page='rss'}personal_blog/{$oUser->getLogin()}/"><i class="fa fa-rss"></i></a></li>
             <li class="user-info-default-username"><a href="{$oUser->getProfileUrl()}">{$oUser->getLogin()}</a></li>
             {if (C::Get('rating.enabled'))}
-                <li class="user-info-default-rating"><i class="fa fa-bar-chart-o"></i><span class="{if $oUser->getRating()>=0}positive{else}negative{/if}">{if $oUser->getRating()>0}+{/if}{$oUser->getRating()}</span></a></li>
+                <li class="user-info-default-rating"><i class="fa fa-bar-chart-o"></i><span class="{if $oUser->getRating()>=0}positive{else}negative{/if}">{if $oUser->getRating()>0}+{/if}{$oUser->getRating()}</span></li>
             {/if}
-            <li class="user-info-default-display">
-                <a href="{$oUser->getProfileUrl()}">
-                    {if !$oUser->getProfileName()}{$aLang.no_name}{else}{$oUser->getProfileName()|escape:'html'}{/if}
-                </a>
-            </li>
+
         </ul>
     </div>
     <div class="user-info-default-bottom">

@@ -2483,7 +2483,7 @@ span.counter {
 }
 .topic-info .user-info-default-container > div.user-info-default-top .user-info-default-username {
   margin-right: 6px;
-  width: 108px;
+  width: 120px;
   white-space: nowrap;
   overflow: hidden;
   position: relative;
@@ -2510,7 +2510,7 @@ span.counter {
   line-height: 12px;
 }
 .topic-info .user-info-default-container > div.user-info-default-top .user-info-default-rating {
-  float: right;
+  float: left;
   margin-right: 16px;
 }
 .topic-info .user-info-default-container > div.user-info-default-top .user-info-default-rating span.positive {
@@ -2550,7 +2550,7 @@ span.counter {
   color: #d25151 !important;
 }
 .topic-info .user-info-default-container > div.user-info-default-bottom ul a i {
-  margin-right: 2px !important;
+  margin-right: 8px !important;
 }
 .topic-info .user-info-default-container > img {
   position: absolute;

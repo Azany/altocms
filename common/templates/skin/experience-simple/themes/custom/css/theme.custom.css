@@ -3252,7 +3252,7 @@ div.pp_experience .pp_loaderIcon {
 .topic-info .user-info-default-container > div.user-info-default-top .user-info-default-rating,
 [data-alto-role="popover"] + .popover .user-info-default-container > div.user-info-default-top .user-info-default-rating,
 .alto-popover .user-info-default-container > div.user-info-default-top .user-info-default-rating {
-  float: right;
+  float: left;
   margin-right: 16px;
 }
 .topic-info .user-info-default-container > div.user-info-default-top .user-info-default-rating span.positive,
