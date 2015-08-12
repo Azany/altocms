@@ -10,7 +10,7 @@
     </div>
 </div>
 *}
-<div class="col-lg-4 user-rating-container">
+<div class="col-sm-6 user-rating-container clearfix">
     <div class="user-rating-header">
         {$aLang.user_rating}
     </div>

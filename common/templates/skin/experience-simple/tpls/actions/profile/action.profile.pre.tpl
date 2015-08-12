@@ -7,7 +7,7 @@
     {hook run='profile_header_begin'}
 
     <div class="row user-info-block">
-        <div class="col-lg-19">
+        <div class="col-sm-18 clearfix">
             <img src="{$oUserProfile->getAvatarUrl('big')}" alt="{$oUserProfile->getDisplayName()}" class="user-logo" itemprop="photo"/>
             <div class="user-name">
                 <div class="user-login-block">
