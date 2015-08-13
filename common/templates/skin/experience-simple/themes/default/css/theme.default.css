@@ -2212,7 +2212,7 @@ ______________________________________________________*/
 }
 .widget-blog-about .panel-content a img {
   width: 100%;
-  border-radius: 200px;
+  border-radius: 20px;
 }
 .blogs-list img {
   border-radius: 32px;
@@ -2410,11 +2410,11 @@ ______________________________________________________*/
   margin-bottom: 22px;
 }
 .user-panel .profile-logo-container {
-  border-radius: 200px;
+  border-radius: 20px;
   position: relative;
 }
 .user-panel .profile-logo-container .profile-photo {
-  border-radius: 200px;
+  border-radius: 20px;
   width: 100%;
   display: block;
   margin-bottom: 8px;
@@ -2600,7 +2600,7 @@ span.counter {
   padding: 15px 0;
 }
 .panel-table img {
-  border-radius: 32px;
+  border-radius: 10px;
 }
 .panel-table .user-date {
   color: #1c374c !important;
@@ -3353,7 +3353,7 @@ div.pp_experience .pp_loaderIcon {
 [data-alto-role="popover"] + .popover .blog-info-default-container img,
 .alto-popover .blog-info-default-container img {
   max-width: 150px;
-  border-radius: 150px;
+  border-radius: 15px;
   margin-bottom: 6px;
 }
 .topic-info .blog-info-default-container td,
