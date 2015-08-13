@@ -1,7 +1,7 @@
 .user-rating-container .vote-total {
     padding: 12px;
     margin: 0;
-    border-radius: 24px;
+    border-radius: 10px;
     color: white;
 }
 
@@ -37,7 +37,7 @@
 .user-power-container .user-power {
     padding: 12px;
     margin: 0;
-    border-radius: 24px;
+    border-radius: 10px;
     background-color: #dae2e5;
 }
 
