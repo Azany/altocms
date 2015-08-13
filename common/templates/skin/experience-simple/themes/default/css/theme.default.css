@@ -2394,8 +2394,8 @@ ______________________________________________________*/
   border: 2px solid white;
   border-radius: 16px !important;
   position: absolute;
-  left: 80%;
-  top: 10%;
+  left: 85%;
+  top: 3%;
   opacity: 1;
 }
 .friend span.success {
