@@ -2426,8 +2426,8 @@ ______________________________________________________*/
   border: 4px solid white;
   border-radius: 16px !important;
   position: absolute;
-  left: 80%;
-  top: 10%;
+  left: 85%;
+  top: 3%;
   opacity: 1;
 }
 .user-panel .profile-logo-container .profile-online-status.success {
