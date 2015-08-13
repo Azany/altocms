@@ -1,6 +1,4 @@
-Alto CMS v.1.1.x
-=======
 
-Multifunctional Content Managment System
+Адаптация Alto CMS под свой проект
 
-Website: http://altocms.com
+Оригинал - Website: http://altocms.com
