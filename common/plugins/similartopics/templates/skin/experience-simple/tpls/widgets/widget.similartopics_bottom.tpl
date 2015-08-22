@@ -18,7 +18,7 @@
                             {if $aWidgetParams.preview.enable}
                                 <a href="{$oSimilarTopic->getUrl()}" class="simtopics-topic-preview">
                                     {if $oSimilarTopic->getPreviewImage()}
-                                        <img src="{$oSimilarTopic->getPreviewImageUrl('50crop')}">
+                                        <img src="{$oSimilarTopic->getPreviewImageUrl('10crop')}">
                                     {/if}
                                 </a>
                             {/if}
