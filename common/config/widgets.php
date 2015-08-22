@@ -82,7 +82,7 @@ $config['widgets']['tags'] = array(
         'tag',
     ),
     'params' => array(
-        'limit' => 20, // max items for display
+        'limit' => 70, // max items for display
     ),
 );
 
