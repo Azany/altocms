@@ -4,7 +4,7 @@
 <div class="panel panel-default sidebar flat widget widget-type-tags">
     <div class="panel-body">
         <div class="panel-header">
-            <i class="fa fa-tag"></i>{$aLang.widget_tags}
+            <i class="fa fa-tags"></i>{$aLang.widget_tags}
         </div>
 
         {if E::IsUser()}
