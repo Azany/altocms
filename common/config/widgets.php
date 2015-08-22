@@ -99,7 +99,7 @@ $config['widgets']['blogs'] = array(
         'blog' => array('{topics}', '{topic}', '{blog}'),
     ),
     'params' => array(
-        'limit' => 10, // max items for display
+        'limit' => 20, // max items for display
     ),
 );
 /*
