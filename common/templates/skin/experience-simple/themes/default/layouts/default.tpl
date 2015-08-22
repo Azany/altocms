@@ -284,7 +284,6 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/31851131" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 {/literal}
-
 {literal}
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
