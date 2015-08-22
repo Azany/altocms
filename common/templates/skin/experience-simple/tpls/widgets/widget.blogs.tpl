@@ -4,7 +4,7 @@
 <div class="panel panel-default sidebar flat widget widget-blogs">
     <div class="panel-body">
         <div class="panel-header">
-            <i class="fa fa-suitcase"></i>{$aLang.widget_blogs}
+            <i class="fa fa-users"></i>{$aLang.widget_blogs}
         </div>
         <div class="panel-navigation">
             {if E::IsUser()}
@@ -27,7 +27,7 @@
     </div>
     <div class="panel-footer">
         <a href="{router page='blogs'}" class="link link-dual link-lead link-clear">
-            <i class="fa fa-suitcase"></i>{$aLang.widget_blogs_all}
+            <i class="fa fa-users"></i>{$aLang.widget_blogs_all}
         </a>
     </div>
 </div>
