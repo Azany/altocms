@@ -6,7 +6,7 @@
 <div class="panel panel-default sidebar flat widget widget-type-stream">
     <div class="panel-body">
         <div class="panel-header">
-            <i class="fa fa-commenting"></i>
+            <i class="fa fa-pencil"></i>
             <a class=""
                href="{router page='comments'}"
                title="{$aLang.widget_stream_comments_all}">{$aLang.widget_stream}</a>
