@@ -244,6 +244,17 @@
         </div>
     </div>
 
+    {include file='commons/common.toolbar.tpl'}
+
+    {hook run='layout_body_end'}
+{/block}
+
+
+<div class="device-xs visible-xs"></div>
+<div class="device-sm visible-sm"></div>
+<div class="device-md visible-md"></div>
+<div class="device-lg visible-lg"></div>
+
 {literal}
     <script type="text/javascript">
         (function (d, w, c) {
@@ -287,14 +298,5 @@
     </script>
 {/literal}
 
-
-    {include file='commons/common.toolbar.tpl'}
-
-    {hook run='layout_body_end'}
-{/block}
-<div class="device-xs visible-xs"></div>
-<div class="device-sm visible-sm"></div>
-<div class="device-md visible-md"></div>
-<div class="device-lg visible-lg"></div>
 </body>
 </html>
