@@ -126,7 +126,7 @@ return array(
     'site_statistics' => 'Статистика сайта',
     'site_stat_users' => 'Пользователей',
     'site_stat_blogs' => 'Блогов',
-    'site_stat_topics' => 'Топиков',
+    'site_stat_topics' => 'Постов',
     'site_stat_comments' => 'Комментариев',
 
     'site_info' => 'Информация о сайте',
@@ -398,7 +398,7 @@ return array(
 
     'topic_edit' => 'Редактировать статью',
     'topic_delete' => 'Удалить статью',
-    'topic_del_confirm' => 'Топик &quot;%%topic%%&quot; будет удален навсегда со всем его содержимым. \nПродолжить?',
+    'topic_del_confirm' => 'Пост &quot;%%topic%%&quot; будет удален навсегда со всем его содержимым. \nПродолжить?',
 
     'param_check_password' => 'Проверять пароль администратора',
     'param_check_password_notice' => 'Если задано, то проверяется качество пароля администратора на надежность',
@@ -462,7 +462,7 @@ return array(
         %hour% — час
         %minute% — минуты
         %second% — секунды
-        %login% — логин автора топика
+        %login% — логин автора поста
         %blog_url% — url блога (для персональных блогов будет заменен на логин автора)
         %topic_type% — тип публикации
         %topic_id% — id публикации

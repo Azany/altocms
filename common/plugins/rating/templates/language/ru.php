@@ -17,7 +17,7 @@ return array(
 
     'acl_vote_user_rating_notice'    => 'голосование за пользователя',
     'acl_vote_blog_rating_notice'    => 'голосование за блог',
-    'acl_vote_topic_rating_notice'   => 'голосование за топик',
+    'acl_vote_topic_rating_notice'   => 'голосование за пост',
     'acl_vote_comment_rating_notice' => 'голосование за комментарий',
     'acl_vote'                       => 'Нижний порог рейтинга для голосования (пользователи с меньшим рейтингом голосовать не смогут)',
     'acl_notice'                     => 'Общие настройки',
