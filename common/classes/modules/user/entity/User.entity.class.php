@@ -56,9 +56,7 @@ class ModuleUser_EntityUser extends Entity {
         );
         $this->aValidateRules[] = array(
             'password',
-            'string',
-            'allowEmpty' => false,
-            'min'        => 5,
+            'password',
             'on'         => array('registration'),
         );
         $this->aValidateRules[] = array(
@@ -163,6 +161,18 @@ class ModuleUser_EntityUser extends Entity {
             return true;
         }
         return E::ModuleLang()->Get('registration_mail_error_used');
+    }
+
+    public function ValidatePassword($sValue, $aParams) {
+
+        $iMinLength = Config::Val('module.security.password_len', 3);
+        if ($sValue && $this->getLogin() && $sValue === $this->getLogin()) {
+            return E::ModuleLang()->Get('registration_password_error', array('min' => $iMinLength));
+        }
+        if (mb_strlen($sValue, 'UTF-8') < $iMinLength) {
+            return E::ModuleLang()->Get('registration_password_error', array('min' => $iMinLength));
+        }
+        return true;
     }
 
     /**
@@ -581,7 +591,7 @@ class ModuleUser_EntityUser extends Entity {
     public function isOnline() {
 
         if ($oSession = $this->getSession()) {
-            if ($oSession->GetSessionExit()) {
+            if ($oSession->getDateExit()) {
                 // User has logout
                 return false;
             }
@@ -685,10 +695,16 @@ class ModuleUser_EntityUser extends Entity {
             $nW = $nH = intval($xSize);
         }
 
-        $sPath .= '-' . $nW . 'x' . $nH . '.' . pathinfo($sPath, PATHINFO_EXTENSION);
-        if (Config::Get('module.image.autoresize') && !F::File_Exists($sPath)) {
-            E::ModuleImg()->AutoresizeSkinImage($sPath, 'avatar', max($nH, $nW));
+        $sResizePath = $sPath . '-' . $nW . 'x' . $nH . '.' . pathinfo($sPath, PATHINFO_EXTENSION);
+        if (Config::Get('module.image.autoresize') && !F::File_Exists($sResizePath)) {
+            $sResizePath = E::ModuleImg()->AutoresizeSkinImage($sResizePath, 'avatar', max($nH, $nW));
         }
+        if ($sResizePath) {
+            $sPath = $sResizePath;
+        } elseif (!F::File_Exists($sPath)) {
+            $sPath = E::ModuleImg()->AutoresizeSkinImage($sPath, 'avatar', null);
+        }
+
         return E::ModuleUploader()->Dir2Url($sPath);
     }
 
