@@ -1,0 +1,27 @@
+.img-smiles{
+	width:auto;
+}
+.markItUp .smiles a, .editor-smiles a, .editor-smiles a:hover {
+	background: none;
+}
+.editor-smiles{
+	background-image: url(../images/icon_smile.gif);
+	width: 16px;
+	height: 16px;
+}
+.smiles.smiles-hide{
+	display: none;
+}
+.smiles{
+	display: block;
+	border: 1px solid #dfe3e8;
+}
+.smiles a{
+	white-space: normal;
+}
+.smiles img{
+	margin: 5px 0 5px 5px;
+}
+.mce-i-smiles:before {
+content: "\e021";
+}
