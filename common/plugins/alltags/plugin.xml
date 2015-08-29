@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<name>
+		<lang name="default">Все теги</lang>
+		<lang name="english">All Tags.</lang>
+	</name>
+	<author>
+		<lang name="default">Em</lang>
+	</author>
+	<homepage>http://nosite.com/</homepage>
+     	<version>1.0</version>
+	<requires>
+		<livestreet>1.0.3</livestreet>
+	        <alto>
+	            <version>0.8</version>
+	        </alto>
+	        <system>
+	            <php>5.3.0</php>
+	        </system>
+		
+	</requires>
+	<description>
+		<lang name="default">In separate page all site tags</lang>
+		<lang name="russian">Выводит отдельной страницей все теги с сайта</lang>
+	</description>
+
+</plugin>
